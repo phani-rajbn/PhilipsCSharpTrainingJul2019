@@ -1,0 +1,7 @@
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleConApp\bin\Debug\SampleConApp.exe.config
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleConApp\bin\Debug\SampleConApp.exe
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleConApp\bin\Debug\SampleConApp.pdb
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleConApp\obj\Debug\SampleConApp.csprojAssemblyReference.cache
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleConApp\obj\Debug\SampleConApp.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleConApp\obj\Debug\SampleConApp.exe
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleConApp\obj\Debug\SampleConApp.pdb
