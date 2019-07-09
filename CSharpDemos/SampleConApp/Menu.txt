@@ -1,0 +1,6 @@
+﻿~~~~~~~~~~~~~~~~~~Stock Market India Pvt. Ltd~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TO ADD NEW STOCK--------------->PRESS 1
+TO DELETE STOCK---------------->PRESS 2
+TO UPDATE STOCK---------------->PRESS 3
+TO FIND STOCK DETAILS---------->PRESS 4
+PS: ANYTHING ELSE IS CONSIDERED AS EXIT........................
