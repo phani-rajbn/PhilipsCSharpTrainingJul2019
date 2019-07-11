@@ -1,0 +1,5 @@
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\SampleDll\bin\Debug\SampleDll.dll
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\SampleDll\bin\Debug\SampleDll.pdb
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\SampleDll\obj\Debug\SampleDll.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\SampleDll\obj\Debug\SampleDll.dll
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\SampleDll\obj\Debug\SampleDll.pdb

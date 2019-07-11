@@ -1,0 +1,7 @@
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\ReflectionClient\bin\Debug\ReflectionClient.exe.config
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\ReflectionClient\bin\Debug\ReflectionClient.exe
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\ReflectionClient\bin\Debug\ReflectionClient.pdb
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\ReflectionClient\obj\Debug\ReflectionClient.csprojAssemblyReference.cache
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\ReflectionClient\obj\Debug\ReflectionClient.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\ReflectionClient\obj\Debug\ReflectionClient.exe
+C:\Users\phani\source\repos\PhilipsCSharpTraining\ReflectionRecap\ReflectionClient\obj\Debug\ReflectionClient.pdb
