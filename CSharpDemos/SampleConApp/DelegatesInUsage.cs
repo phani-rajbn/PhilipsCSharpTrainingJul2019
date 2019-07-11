@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,6 +26,8 @@ namespace SampleConApp
         {
             return string.Format("Stock:{0}\nPrice:{1:C}", StockName, StockPrice);
         }
+
+        
     }
 
     class StockMarket
@@ -33,7 +37,10 @@ namespace SampleConApp
         public void AddStock(Stock stock)
         {
             if (_stocks.Add(stock))
+            {
+                if(Refresh != null)
                 Refresh(AllStocks);
+            }
         }
 
         public void UpdateStock(Stock stock)
@@ -51,34 +58,58 @@ namespace SampleConApp
         static StockMarket app = new StockMarket();
         static void Main(string[] args)
         {
-            
-            app.Refresh += App_Refresh;
-            do
+
+            var selectedType = Assembly.GetExecutingAssembly().GetType("SampleConApp.StockMarket");
+            var objectInstance = Activator.CreateInstance(selectedType);
+            var method = selectedType.GetMethod("AddStock");
+            var parameters = method.GetParameters();
+            if(parameters[0].ParameterType.FullName == "SampleConApp.Stock")
             {
-                Console.WriteLine("Press 1 to Add and 2 To Update");
-                string choice = Console.ReadLine();
-                if(choice == "1")
+                var type = parameters[0].ParameterType;
+                var pm = Activator.CreateInstance(type);
+                foreach(var property in type.GetProperties())
                 {
-                    var stock = new Stock
-                    {
-                        StockID = int.Parse(Console.ReadLine()),
-                        StockName = Console.ReadLine(),
-                        StockPrice = int.Parse(Console.ReadLine())
-                    };
-                    app.AddStock(stock);
+                    Console.WriteLine("Enter the value of the type {0} for the property{1}", property.PropertyType.Name, property.Name);
+                    var value = Convert.ChangeType(Console.ReadLine(), property.PropertyType);
+                    property.SetValue(pm, value);
                 }
-                else
-                {
-                    Console.WriteLine("Updating the Stock");
-                    var stock = new Stock
-                    {
-                        StockID = int.Parse(Console.ReadLine()),
-                        StockName = Console.ReadLine(),
-                        StockPrice = int.Parse(Console.ReadLine())
-                    };
-                    app.UpdateStock(stock);
-                }
-            } while (true);
+                method.Invoke(objectInstance, new object[] { pm });
+            }
+            var another = selectedType.GetProperty("AllStocks");
+            var returnValue = another.GetValue(objectInstance);
+            //Console.WriteLine(returnValue.GetType().Name);
+            // var list = returnValue as List<object>;
+            ArrayList data = new ArrayList(returnValue as ICollection);
+            foreach(var itemm in data)
+                Console.WriteLine(itemm);
+
+            //app.Refresh += App_Refresh;
+            //do
+            //{
+            //    Console.WriteLine("Press 1 to Add and 2 To Update");
+            //    string choice = Console.ReadLine();
+            //    if(choice == "1")
+            //    {
+            //        var stock = new Stock
+            //        {
+            //            StockID = int.Parse(Console.ReadLine()),
+            //            StockName = Console.ReadLine(),
+            //            StockPrice = int.Parse(Console.ReadLine())
+            //        };
+            //        app.AddStock(stock);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Updating the Stock");
+            //        var stock = new Stock
+            //        {
+            //            StockID = int.Parse(Console.ReadLine()),
+            //            StockName = Console.ReadLine(),
+            //            StockPrice = int.Parse(Console.ReadLine())
+            //        };
+            //        app.UpdateStock(stock);
+            //    }
+            //} while (true);
         }
 
         private static void App_Refresh(List<Stock> obj)
@@ -86,7 +117,7 @@ namespace SampleConApp
             Console.ForegroundColor = ConsoleColor.Red;
             foreach (var stock in obj)
                 Console.WriteLine(stock);
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
         }
     }
 }
