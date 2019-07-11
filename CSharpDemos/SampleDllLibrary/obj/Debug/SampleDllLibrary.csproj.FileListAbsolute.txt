@@ -1,0 +1,5 @@
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleDllLibrary\bin\Debug\SampleDllLibrary.dll
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleDllLibrary\bin\Debug\SampleDllLibrary.pdb
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleDllLibrary\obj\Debug\SampleDllLibrary.csproj.CoreCompileInputs.cache
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleDllLibrary\obj\Debug\SampleDllLibrary.dll
+C:\Users\phani\source\repos\PhilipsCSharpTraining\CSharpDemos\SampleDllLibrary\obj\Debug\SampleDllLibrary.pdb
