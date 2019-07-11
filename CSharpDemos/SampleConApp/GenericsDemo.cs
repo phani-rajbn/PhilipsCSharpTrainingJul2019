@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleDllLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 //Generics are improvised version on Collections to make it type safe. Generics came in .NET 2.0.  Similar to templates of C++ which could be extended as well as used with ready to use classes for developing Collection based Applications. 
@@ -9,50 +10,7 @@ using System.Linq;
 //Templates are classes that can be applied on any type. Generics provide a type safe version that can be implemented in .NET in more optimized manner where the type check happens at compile time in .NET.
 namespace SampleConApp
 {
-    class Employee
-    {
-        public int EmpID { get; set; }
-        public string EmpName { get; set; }
-        public string EmailAddress { get; set; }
-
-        public override int GetHashCode()
-        {
-            return EmpName.GetHashCode();//Gets the ID which determines whether 2 objects are of the same kind.
-        }
-
-        public override bool Equals(object obj)
-        {
-            //what makes 2 objects same...
-            if(obj is Employee)
-            {
-                var temp = obj as Employee;
-                return temp.EmpName == this.EmpName;
-            }
-            return false;
-        }
-    }
-    partial class EmployeeCollection
-    {
-        private List<Employee> _employees = new List<Employee>();
-
-        public void AddNewEmployee(Employee emp) => _employees.Add(emp);
-
-        public void DeleteEmployee(int id)
-        {
-            var find = _employees.Find((emp) => emp.EmpID == id);
-            //Employee find = null;
-            //foreach(var emp  in _employees)
-            //{
-            //    if(emp.EmpID == id)
-            //    {
-            //        find = emp;
-            //        break;
-            //    }
-            //}
-            if (find == null) throw new Exception("Employee not found to delete");
-            _employees.Remove(find);
-        }
-    }
+    
     class GenericsDemo
     {
         static Dictionary<string, string> users = new Dictionary<string, string>();
