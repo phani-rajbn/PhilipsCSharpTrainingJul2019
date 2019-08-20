@@ -1,0 +1,107 @@
+Windows Communication Foundation:
+WCF is a framework for building Service oriented Applications(SOA). Using WCF, U can send data as async messages from one service to another. The another could be an external service or an Application that consumes that service. 
+The Application that creates the service is called as Server Application and the Application that cosumes the service is called as Client Applications. 
+WCF is designed for multi platforms and devices. The Improvised version of WCF is Web API.
+Services can be created(Hosted) in various kinds like IIS, Self Hosting .NET App, Window Activation Services(WAS) or as a Windows Service.
+WCF was introduced in .NET 3.0 with a code name INDIGO. It combines the features of Web services, .NET Remoting, MSMQ(MS messaging services) and COM+(Component Object Model). WCF is designed to provide a Common platform for all .NET Communication. 
+
+Prior Service Oriented Technologies:
+1. COM and DCOM were the first versions of SOA in Windows Platform. It was in unmanaged Environment using languages like C++ and VB. 
+2. Once .NET came, these technologies were replaced by .NET based Technologies called Remoting and Web Services. 
+.NET Remoting was the first of its kind to provide SOA in a .NET Environment. It was exposed only thro TCP and HTTP practically and it was expecting both the client Apps and server apps to be in .NET environment only. In other words, a Java App could not cosume the .NET Remoting services.
+3. Web services was based on XML and standardized by W3C for providing platform independent technology for SOA. Web Services were available only on HTTP and expected data to be of the type XML only. Any object that cannot be represented as XML could be used inside the Web services. 
+4. The Next Generation SOA was WCF which combined the best of all the previous technologies with new features and a support for extendability to the future technologies also. WCF became the common Framework for all Service oriented Applications in the world of .NET. 
+
+What is a service?
+ A service is a set of functions or operations that are exposed thro a pre defined protocol by which Applications consume the functions. Every service will have a protocol, an address and list of operations available at that service. A service address would contain the IPAddress of the machine that hosts the service along with a certain port no thro which the service is available. 
+
+How is it different from DLLs?
+Dlls are also a set of functions that are consume by Applications, but they are all inproc components. Dlls are components that are loaded into the process of the App that consumes it. In other words, the dlls share the code but not the data among the Applications that consume it. There is no IPC involved. 
+
+But in Services, a service itself will be created in a dedicated process and applications consume it thro Inter process communication. In this case, the Data also is shared among all the Applications that consume it. 
+Sql Server is a service that allows to store the data into its database and Applications access the data thro various technologies like JDBC, ADO.NET and many other Data Access models.
+Most of the databases are Services. 
+A service that is designed to be hosted inside a Windows Environment is called as Windows Service and the one that is available on the web is called as Web service. 
+
+What do we develop?
+A service based on Remoting.
+A service based on Web Services. 
+A WAS enabled WCF service. 
+A Self Hosting WCF service
+A Windows Service with WCF Components. 
+An IIS WCF service
+An Web API which exposes services to multiple platforms(REST Services
+
+WCF Services:
+WCF provides services to be created in WAS(Windows Activation Services). 
+WCF uses Interface implementation pattern where the functions of UR service will be defined under interface and implementation is done by the Service Component(A Class that implements the service).
+WCF services are consumed by the Clients using a File called WSDL(Web services Description language). All the definitions related to the service has to be mentioned here.
+WCF uses attributes to set the definitions within the WSDL. 
+A Service class implements an interface which has attribute called ServiceContract. A Service Contract Interface will have its methods with attribute OperationContract. 
+Any operation that has user defined types will have attribute called DataContract and its properties will have attribute called DataMember. 
+Every WCF service contains contracts, bindings and addresses. This is called  as the ABC of WCF Services. 
+bindings are the info about the predefined protocols thro which the services are exposing its operations. Contracts tell about the methods the service exposes and Address defines the location of the service within the network. 
+All these are configured using an App.Config file within the project. 
+
+------------------------Day 2-------------------------------------
+Self Hosting WCF components: U can host WCF Components inside any .NET Application and allow clients to access them. This is required when U want to have multiple bindings to a single Service. It means that UR App will be executing while UR Client Apps will consume it. The Server App exposes the services with multiple endpoints like TCP, HTTP or SOAP. If U want a set of operations to be available as HTTP and another set of operations to be available thro TCP, then its good to create a Self Hosting App and allows UR Contracts accessible with multiple bindings. 
+
+U can create a .NET Application and add WCF libraries into it. Create the interface, implementations and implement WCF inside the App's Main Function. 
+WCF implementation includes using the Classes of WCF to create the WCF component and expose it thro an Address. The Class called ServiceHost is used to host the WCF Components. This class has methods like Open and CLose to open and close the WCF Application. 
+However, U could still provide the bindings for the WCF component thro config file. In this case, the developer of the service is responsible for providing and managing the life cycle of the host process. 
+Our Service: Stores the data as CSV file . It will have functions to add, remove, update and read. 
+
+ --------------------------------Day 3-----------------------------
+ Windows Services and REST Services in WCF.
+ SQL Server: 
+ Authentication: Windows Mode. 
+ Points to remember: SQL Server Name: URMachine\SQLEXPRESS, URMachine. 
+ Select the Windows Authentication Mode as U dont have to pass password while connecting to the db...
+ Windows Services: Apps that are executed on Windows under the services are called Windows Services. They are registered Processes that are automated to start at the Bootup of the Machine. However U could allow the Processes to be started manually also. The whole set of services are controlled by SCM(Service controll Manager) which monitors the security, process creation, execution and termination of the process. Windows Services are created to make a certain service made available for Windows apps that run on that machine without much effort. 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+ 
+ 
