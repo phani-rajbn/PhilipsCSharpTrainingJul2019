@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script>
+        var url = "http://localhost:59778/api/Employee";
+        $(document).ready(function () {
+            $.get(url, function (data) {
+                //data is the return value of UR GET....
+                $.each(data, (index, value) => {
+                    var row = '<tr><td>' + value.empID + '</td><td>';
+                    row += value.empName + '</td><td>';
+                    row += value.empAddress + '</td><td>';
+                    row += value.empSalary + '</td></tr>';
+                    $("table").append(row);
+                })
+            })
+
+            $("#btnSave").click(function () {
+                debugger;
+                var emp = {};
+                emp.empID = $("#txtID").val();
+                emp.empName = $("#txtName").val();
+                emp.empAddress = $("#txtAddress").val();
+                emp.empSalary = $("#txtSalary").val();
+                $.post(url, JSON.stringify(emp), (data) => {
+                    alert(data);
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>Web API Client for our Application</h1>
+    
+    <div>
+        <table border="1" width="90%">
+            <tr>
+                <th>EmployeeID</th>
+                <th>EmployeeName</th>
+                <th>EmployeeAddress</th>
+                <th>EmployeeSalary</th>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>New Registration</h1>
+        <p>
+            <input id="txtID" placeholder="Enter ID" />
+            <input id="txtName" placeholder="Enter Name" />
+            <input id="txtAddress" placeholder="Enter Address" />
+            <input id="txtSalary" placeholder="Enter Salary" />
+            <button id="btnSave">Save</button>
+        </p>
+    </div>
+</body>
+</html>

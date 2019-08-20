@@ -1,0 +1,17 @@
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\bin\Debug\netcoreapp2.1\EmployeeService.deps.json
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\bin\Debug\netcoreapp2.1\EmployeeService.runtimeconfig.json
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\bin\Debug\netcoreapp2.1\EmployeeService.runtimeconfig.dev.json
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\bin\Debug\netcoreapp2.1\EmployeeService.dll
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.csprojAssemblyReference.cache
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.csproj.CoreCompileInputs.cache
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.RazorAssemblyInfo.cache
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.RazorAssemblyInfo.cs
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.AssemblyInfoInputs.cache
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.AssemblyInfo.cs
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.RazorTargetAssemblyInfo.cache
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\bin\Debug\netcoreapp2.1\EmployeeService.pdb
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.dll
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.pdb
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\bin\Debug\netcoreapp2.1\DataAccessLib.dll
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\bin\Debug\netcoreapp2.1\DataAccessLib.pdb
+B:\Programs\PhilipsWCF_Aug2019\RestAPI\EmployeeService\obj\Debug\netcoreapp2.1\EmployeeService.csproj.CopyComplete
