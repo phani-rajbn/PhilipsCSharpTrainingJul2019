@@ -1,0 +1,9 @@
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\bin\Debug\netcoreapp2.1\ClassLibrary1.deps.json
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\bin\Debug\netcoreapp2.1\ClassLibrary1.dll
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\bin\Debug\netcoreapp2.1\ClassLibrary1.pdb
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.csprojAssemblyReference.cache
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.csproj.CoreCompileInputs.cache
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.AssemblyInfoInputs.cache
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.AssemblyInfo.cs
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.dll
+B:\Programs\PhilipsWCF_Aug2019\WCFExamples\ClassLibrary1\obj\Debug\netcoreapp2.1\ClassLibrary1.pdb
